@@ -16,7 +16,7 @@ const { title, description, image, imageAlt, type, noindex } = Astro.props
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -42,6 +42,12 @@ const { title, description, image, imageAlt, type, noindex } = Astro.props
       type={type}
       noindex={noindex}
     />
+
+    {import.meta.env.DEV && (
+      <script>
+        import "react-grab";
+      </script>
+    )}
   </head>
   <body>
     <slot />

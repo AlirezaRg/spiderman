@@ -1,6 +1,5 @@
 ---
 import ResponsiveImage from '@/components/ResponsiveImage.astro'
-import CastCrew from '@/components/CastCrew.astro'
 import { FICHA, SINOPSIS } from '@/data/content'
 ---
 
@@ -27,7 +26,7 @@ import { FICHA, SINOPSIS } from '@/data/content'
 			sizes="(min-width: 768px) 290px, 100vw"
 			width={1080}
 			height={1350}
-			alt="Cartel de Spider-Man: Brand New Day. Spider-Man salta sobre los rascacielos de Nueva York mientras un grupo de ninjas vestidos de rojo empuña katanas."
+			alt="Poster of Spider-Man: Brand New Day. Spider-Man leaps over the New York skyscrapers while a group of ninjas dressed in red wield katanas."
 			pictureClass="md:col-start-2 md:row-span-2 md:row-start-1"
 			class="h-auto w-full"
 			data-sinopsis-poster
@@ -50,14 +49,9 @@ import { FICHA, SINOPSIS } from '@/data/content'
 			</dl>
 		</div>
 	</div>
-
-	<div class="mx-auto mt-10 w-full max-w-6xl md:mt-18">
-		<CastCrew />
-	</div>
 </section>
 
 <script>
-	import { $$ } from '@/lib/dom'
 	import { revealOnScroll } from '@/lib/gsap'
 
 	revealOnScroll('[data-sinopsis-anim]', {
@@ -73,14 +67,5 @@ import { FICHA, SINOPSIS } from '@/data/content'
 		autoAlpha: 0,
 		duration: 0.9,
 		scrollTrigger: { trigger: '#sinopsis' }
-	})
-
-	$$('[data-cast-crew-group]').forEach((group) => {
-		revealOnScroll(group, {
-			y: 40,
-			autoAlpha: 0,
-			duration: 0.8,
-			scrollTrigger: { trigger: group }
-		})
 	})
 </script>

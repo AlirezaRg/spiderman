@@ -36,7 +36,7 @@ const jsonLd = {
 			url: SITE_URL,
 			name: SEO.siteName,
 			description: SEO.description,
-			inLanguage: 'es-ES',
+			inLanguage: 'en-US',
 			publisher: {
 				'@type': 'Organization',
 				name: SEO.author
@@ -55,18 +55,17 @@ const jsonLd = {
 				width: SEO.imageWidth,
 				height: SEO.imageHeight
 			},
-			inLanguage: 'es-ES'
+			inLanguage: 'en-US'
 		},
 		{
 			'@type': 'Movie',
 			'@id': `${SITE_URL}/#movie`,
 			name: SEO.movieTitle,
-			alternateName: 'Spider-Man: Un Nuevo Día',
 			description: SEO.description,
 			image: imageUrl,
 			url: SITE_URL,
 			datePublished: SEO.releaseDateISO,
-			inLanguage: 'es',
+			inLanguage: 'en',
 			countryOfOrigin: {
 				'@type': 'Country',
 				name: 'United States'
@@ -86,7 +85,7 @@ const jsonLd = {
 			},
 			trailer: {
 				'@type': 'VideoObject',
-				name: `${SEO.movieTitle} — Tráiler Oficial`,
+				name: `${SEO.movieTitle} — Official Trailer`,
 				description: SEO.description,
 				thumbnailUrl: trailerThumbnailUrl,
 				uploadDate: TRAILER_OFICIAL.uploadDate,
@@ -108,7 +107,7 @@ const jsonLd = {
 {/* Open Graph */}
 <meta property="og:type" content={type} />
 <meta property="og:site_name" content={SEO.siteName} />
-<meta property="og:locale" content="es_ES" />
+<meta property="og:locale" content="en_US" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />

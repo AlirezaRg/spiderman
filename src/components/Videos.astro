@@ -8,7 +8,7 @@ import { VIDEOS } from '@/data/content';
 	id="videos"
 	class="videos relative mb-[20vh] min-h-screen bg-neutral-black md:mb-[25vh]"
 >
-	<h2 class="sr-only">Vídeos</h2>
+	<h2 class="sr-only">Videos</h2>
 
 	<div class="pin-surface justify-center bg-red-dark">
 		<div class="videos__viewport">
@@ -35,7 +35,7 @@ import { VIDEOS } from '@/data/content';
 								type="button"
 								data-trailer-open={video.id}
 								class="absolute inset-0 z-[1] cursor-pointer border-0 bg-transparent p-0 focus-visible:outline-none"
-								aria-label={`Reproducir: ${video.title}`}
+								aria-label={`Play: ${video.title}`}
 							>
 								<span class="videos__play">
 									<PlayVideoButton />

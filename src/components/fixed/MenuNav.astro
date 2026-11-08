@@ -13,7 +13,7 @@ const initial = SECTIONS[0].label;
 	<button
 		type="button"
 		data-menu-toggle
-		aria-label="Abrir menú"
+		aria-label="Open menu"
 		aria-expanded="false"
 		aria-controls="menu-panel"
 		class="menu-toggle flex items-stretch gap-[2px]"
@@ -42,7 +42,7 @@ const initial = SECTIONS[0].label;
 		</span>
 	</button>
 
-	<nav id="menu-panel" data-menu-panel hidden aria-label="Secciones" class="menu-panel">
+	<nav id="menu-panel" data-menu-panel hidden aria-label="Sections" class="menu-panel">
 		<ul
 			class:list={[
 				'flex w-[220px] flex-col px-4 font-display text-title-small uppercase tracking-wide text-neutral-white',
@@ -249,7 +249,7 @@ const initial = SECTIONS[0].label;
 		const setOpen = (next: boolean) => {
 			open = next;
 			toggle.setAttribute('aria-expanded', String(open));
-			toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+			toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
 			panel.hidden = !open;
 			// La píldora lleva `flex`, que gana al `display: none` del atributo
 			// `hidden`, así que aquí hace falta apagarla por estilo.

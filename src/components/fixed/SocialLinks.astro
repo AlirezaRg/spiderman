@@ -2,14 +2,11 @@
 // Abajo a la izquierda: redes sociales.
 import { PILL } from '@/consts';
 import Instagram from '@/assets/icons/instagram.svg';
-import X from '@/assets/icons/x.svg';
-import Facebook from '@/assets/icons/facebook.svg';
+import GitHub from '@/assets/icons/github.svg';
 
-// TODO: confirmar los perfiles oficiales de la campaña en España.
 const redes = [
-	{ nombre: 'Instagram', href: 'https://www.instagram.com/spidermanmovie', Icono: Instagram },
-	{ nombre: 'X', href: 'https://x.com/SpiderManMovie', Icono: X },
-	{ nombre: 'Facebook', href: 'https://www.facebook.com/SpiderManMovie', Icono: Facebook }
+	{ nombre: 'Instagram', href: 'https://www.instagram.com/codeiish', Icono: Instagram },
+	{ nombre: 'GitHub', href: 'https://www.github.com/AlirezaRg', Icono: GitHub }
 ];
 ---
 
@@ -21,7 +18,7 @@ const redes = [
 					href={href}
 					target="_blank"
 					rel="noopener noreferrer"
-					aria-label={`${nombre} (abre en una pestaña nueva)`}
+					aria-label={`${nombre} (opens in a new tab)`}
 					class:list={[
 						'social-link grid size-12 place-items-center rounded-full',
 						PILL

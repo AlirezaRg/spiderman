@@ -1,19 +1,18 @@
 ---
-import ResponsiveImage from '@/components/ResponsiveImage.astro';
+import { Image } from 'astro:assets';
+import codeiishLogo from '@/assets/images/brand/codeiish-logo.png';
 ---
 
 <a
 	href="#trailer"
-	class="site-logo pointer-events-auto w-[min(42vw,230px)] shrink-0"
-	aria-label="Inicio"
+	class="site-logo pointer-events-auto block w-[min(42vw,230px)] shrink-0 overflow-hidden rounded-full"
+	aria-label="Home"
 >
-	<ResponsiveImage
-		base="logo"
-		widths={[600, 1200]}
-		sizes="(min-width: 768px) 230px, 42vw"
-		width={1200}
-		height={638}
-		alt="Marvel Studios — Spider-Man: Brand New Day. Exclusivamente en cines el 29 de julio en formatos premium."
+	<Image
+		src={codeiishLogo}
+		alt="CODEIISH"
+		width={230}
+		height={230}
 		class="h-auto w-full"
 		loading="eager"
 		fetchpriority="high"

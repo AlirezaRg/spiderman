@@ -29,14 +29,14 @@ export const TRAILER_OFICIAL = TRAILERS_YOUTUBE['trailer-oficial'];
 export const SEO = {
 	siteName: 'Spider-Man: Brand New Day',
 	movieTitle: 'Spider-Man: Brand New Day',
-	title: 'Spider-Man: Brand New Day — Exclusivamente en cines el 29 de julio',
+	title: 'Spider-Man: Brand New Day — Only in Theaters July 29',
 	description:
-		'Spider-Man: Brand New Day llega exclusivamente a cines el 29 de julio. Una nueva etapa para Peter Parker. Descubre el tráiler, la sinopsis y reserva tus entradas.',
+		'Spider-Man: Brand New Day arrives only in theaters on July 29. A new chapter for Peter Parker. Watch the trailer, read the synopsis, and book your tickets.',
 	author: 'Sony Pictures',
 	keywords:
-		'Spider-Man, Brand New Day, Tom Holland, Zendaya, Marvel, cine, estreno, tráiler, entradas, Destin Daniel Cretton',
+		'Spider-Man, Brand New Day, Tom Holland, Zendaya, Marvel, movie, release, trailer, tickets, Destin Daniel Cretton',
 	image: '/images/poster-870.webp',
-	imageAlt: 'Cartel oficial de Spider-Man: Brand New Day',
+	imageAlt: 'Official poster of Spider-Man: Brand New Day',
 	imageWidth: 870,
 	imageHeight: 1088,
 	releaseDateISO: '2026-07-29',
@@ -52,10 +52,10 @@ export interface Section {
 /** Secciones de la página, en orden. El indicador del menú se apoya en esta lista. */
 export const SECTIONS: Section[] = [
 	{ id: 'trailer', label: 'Trailer' },
-	{ id: 'estreno', label: 'Estreno' },
-	{ id: 'sinopsis', label: 'Sinopsis' },
+	{ id: 'estreno', label: 'Release' },
+	{ id: 'sinopsis', label: 'Synopsis' },
 	{ id: 'videos', label: 'Videos' },
-	{ id: 'galeria', label: 'Galería' },
+	{ id: 'galeria', label: 'Gallery' },
 	{ id: 'partners', label: 'Partners' }
 ];
 

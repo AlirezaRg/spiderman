@@ -10,15 +10,16 @@ import { PILL } from "@/consts"
 import PlayVideoButton from "@/components/PlayVideoButton.astro"
 ---
 
-<button
-  type="button"
+<a
+  href="https://www.codeiish.ir"
+  target="_blank"
+  rel="noopener noreferrer"
   data-trailer-cta
-  data-trailer-open
   class:list={[
     "p-2 trailer-cta pointer-events-auto font-display uppercase",
     PILL,
   ]}
-  aria-label="Ver tráiler oficial"
+  aria-label="Visit CODEIISH (opens in a new tab)"
 >
   <picture class="trailer-cta__media">
     <source type="image/avif" srcset="/images/trailer-cta-376.avif" />
@@ -33,14 +34,14 @@ import PlayVideoButton from "@/components/PlayVideoButton.astro"
   </picture>
 
   <span class="trailer-cta__body">
-    <span class="trailer-cta__title">Descubre el <br />trailer oficial</span>
-    <span class="trailer-cta__short" data-label="Ver trailer">Ver trailer</span>
+    <span class="trailer-cta__title">Built by <br />CODEIISH</span>
+    <span class="trailer-cta__short" data-label="Visit site">Visit site</span>
   </span>
 
   <span class="trailer-cta__play">
     <PlayVideoButton />
   </span>
-</button>
+</a>
 
 <style>
   /* Las medidas de la tarjeta abierta cuelgan de `--h` (su altura). Proporciones

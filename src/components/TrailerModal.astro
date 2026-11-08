@@ -12,7 +12,7 @@ const trailers = JSON.stringify(
 			key,
 			{
 				src: `https://www.youtube-nocookie.com/embed/${trailer.id}?autoplay=1&start=${trailer.start}&rel=0&modestbranding=1&playsinline=1`,
-				title: VIDEOS.find((video) => video.id === key)?.title ?? 'Tráiler'
+				title: VIDEOS.find((video) => video.id === key)?.title ?? 'Trailer'
 			}
 		])
 	)
@@ -40,13 +40,13 @@ const trailers = JSON.stringify(
 	     `absolute -top-11` el overflow la recortaba entera: invisible e
 	     inclickeable, y `showModal()` le daba el foco inicial. -->
 	<div class="relative w-full">
-		<h2 id="trailer-modal-title" class="sr-only">Tráiler oficial</h2>
+		<h2 id="trailer-modal-title" class="sr-only">Official Trailer</h2>
 
 		<button
 			type="button"
 			data-trailer-modal-close
 			class="fixed top-4 right-4 md:top-6 md:right-6 z-[1] grid size-10 place-items-center rounded-full bg-neutral-dark/60 text-neutral-white backdrop-blur-md transition-colors hover:bg-neutral-dark/80 focus-visible:bg-neutral-dark/80"
-			aria-label="Cerrar tráiler"
+			aria-label="Close trailer"
 		>
 			<Close class="size-3.5" aria-hidden="true" />
 		</button>
@@ -133,7 +133,7 @@ const trailers = JSON.stringify(
 			const open = (key: string) => {
 				const trailer = trailers[key] ?? trailers[defaultKey];
 				if (!trailer) return;
-				mount(trailer.src, `Tráiler: ${trailer.title}`);
+				mount(trailer.src, `Trailer: ${trailer.title}`);
 				if (titleEl) titleEl.textContent = trailer.title;
 				if (!modal.open) modal.showModal();
 				document.addEventListener('wheel', blockBackgroundScroll, {
